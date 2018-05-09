@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Store</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="src/main/resources/static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
+</head>
+
+<body class="body">
+    <div class="AdminOptions">
+        <h1 class="h1">Add Store</h1>
+
+        <form method="post" th:action="@{/AddStore}" action="#">
+            <input  class="input" type="text" name="Name" required="required" />
+            <input  class="input" type="text" name="Location" required="required" />
+
+
+            <select  class="select" name="type"> <option value="Online" >Online</option>
+                <option value="OnSite">OnSite</option></select>
+            <input  type="submit" class="myButton" value="Add Store" />
+        </form>
+
+
+    </div>
+</body>
+
+</html>

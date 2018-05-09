@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Store Owner Home Page</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="src/main/resources/static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
+</head>
+
+<body class="body">
+    <div class="AdminOptions">
+        <h1 class="h1">Store Owner Option</h1>
+            <a th:href="AddProductToStore" ><input class="input" type="submit" name="u" value="Add Product" /> </a>
+            <a th:href="AddStore" ><input class="input" type="submit" name="aa" value="Add Store" /> </a>
+            <a th:href="AddBrand" ><input class="input" type="submit" name="aaaa" value="Add Brand" /> </a>
+             <a th:href="Action" ><input class="input" type="submit" name="aaaaa" value="Action" /> </a>
+            
+    </div>
+</body>
+
+</html>

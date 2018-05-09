@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Brand</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="src/main/resources/static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
+</head>
+
+<body class="body">
+    <div class="AddBrandAdmin">
+        <h1 class="h1">Add Brand</h1>
+
+        <form method="post" th:action="@{/AddBrandAdmin}" th:object="${AddBrandAdmin}" action="#">
+            <input  class="input" type="text" th:field="*{name}" placeholder="Name" required="required" />
+            <input  class="input" type="text" th:field="*{Category}" placeholder="Category" required="required" />
+            <select  class="select" th:field="*{Type}"> <option value="Online" >Online</option>
+                <option value="OnSite">OnSite</option></select>
+            <input  type="submit" class="myButton" value="Add" />
+        </form>
+
+
+    </div>
+</body>
+
+</html>

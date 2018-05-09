@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Action</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="src/main/resources/static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
+</head>
+
+<body class="body">
+    <div class="Action">
+        <h1 class="h1">Action</h1>
+
+        <form method="post" th:action="@{/Action}" th:object="${Action}" action="#">
+            <input  class="input" type="text" th:field="*{delete}" placeholder="delete" required="required" />
+            <input  class="input" type="text" th:field="*{Add}" placeholder="Add" required="required" />
+            <input  class="input" type="text" th:field="*{edit}" placeholder="edit" required="required" />
+            
+        </form>
+
+
+    </div>
+</body>
+
+</html>

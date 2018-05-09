@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>offer product</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="src/main/resources/static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
+</head>
+
+<body class="body">
+    <div class="offerproduct">
+        <h1 class="h1">offer product</h1>
+
+        <form method="post" th:action="@{/offerproduct}" th:object="${offerproduct}" action="#">
+            <input  class="input" type="text" th:field="*{offer}" placeholder="Offer" required="required" />
+             <input  class="input" type="text" th:field="*{product}" placeholder="product" required="required" />
+            <input  type="submit" class="myButton" value="Add" />
+        </form>
+
+
+    </div>
+</body>
+
+</html>

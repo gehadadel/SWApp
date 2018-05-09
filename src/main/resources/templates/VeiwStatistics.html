@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Stat</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="src/main/resources/static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
+</head>
+
+<body class="body">
+    <div class="AdminOptions">
+        <h1 class="h1">Approval Statistics</h1>
+
+        <form method="post" th:action="@{/AddProductStoreOwner}" action="#">
+       
+
+            <select class="select" name="Brand">
+            <option th:each="stat:${Statistics}">
+                <p class="p" th:text=${stat}></p>
+            <input  type="submit" class="myButton" value="Submmit" />
+           </option>
+             </select>
+        </form>
+
+
+    </div>
+</body>
+
+</html>
